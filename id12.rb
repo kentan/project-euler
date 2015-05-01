@@ -1,6 +1,7 @@
 #Highly divisible triangular number
 
-
+# I don't like using Prime package and will change the code
+# so that it isn't neede.
 require 'Prime'
 
 def get_triangle_number(n)
