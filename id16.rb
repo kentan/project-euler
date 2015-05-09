@@ -7,13 +7,17 @@ def id16(digit)
     ten_digit = 1000000000
     for i in 0..(digit - 1)
         k = (v.length - 1)
+        
         for j in 0..k
             v[j] = v[j] * 2
+        end
+        for j in 0..k
             if v[j] >= ten_digit
                 v[j + 1] = 0 if v[j + 1] == nil
                 v[j + 1] += (v[j] / ten_digit)
                 v[j] = v[j] % ten_digit
             end
+            j+=1
         end
     end
 
